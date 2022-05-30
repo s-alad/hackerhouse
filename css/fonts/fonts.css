@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "codeR";
+  src: url(../../assets/fonts/CallingCode-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "squareR";
+  src: url(../../assets/fonts/Code-Squared.woff2) format("woff2"), url(../../assets/fonts/Code-Squared.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*# sourceMappingURL=fonts.css.map */
