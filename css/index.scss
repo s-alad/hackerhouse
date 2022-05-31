@@ -6,6 +6,15 @@ $check: #FFAE0C;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     background-color: #020404;
     display: flex;
@@ -21,13 +30,19 @@ body {
     justify-content: center;
 }
 
+@mixin addSpaceToTop() {
+    position: relative; top:-40px;
+}
+
 #start {
     display: flex;
     width: 100%;
-    height: 100px;
+    min-height: 100px;
 
     .tab {
         display: flex;
+        flex-wrap: wrap;
+        
         .item {
             height: 60px;
             border: 2px solid transparent;
@@ -192,6 +207,8 @@ body {
         }
     }
 
+
+    #projects {@include addSpaceToTop();}
     .projects {
         display: flex;
         padding-left: 65px;
@@ -216,7 +233,7 @@ body {
         padding-left: 65px;
 
         .menu {
-            width: 230px;
+            width: 250px;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -323,6 +340,8 @@ body {
     }
 
     .sponsors {
+        #sponsors { @include addSpaceToTop();}
+
         padding-left: 55px;
         top: -40px;
         position: relative;
@@ -339,6 +358,9 @@ body {
             background-color: $primary;
             //border: 2px solid $secondary;
             height: 165px; width: 175px;
+        }
+        .inner:hover {
+            background-color: #0f1d1e;
         }
 
         .ovofund {
@@ -388,13 +410,14 @@ body {
     }
 
     .team {
+        #team {@include addSpaceToTop();}
         padding-left: 55px;
         .teamsection {
-            height: 500px;
         }
     }
     
     .contact {
+        #contact {@include addSpaceToTop();}
         padding-left: 55px;
 
         .contactboxarea {
@@ -410,6 +433,9 @@ body {
                 height: 25px;
                 margin-right: 10px;
             }
+        }
+        .contactboxarea:hover {
+           
         }
     }
 }

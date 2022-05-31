@@ -9,31 +9,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/fonts/fonts.css">
+        <link rel="stylesheet" href="css/blockchain/blockchain.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <link rel="icon" type="image/x-icon" href="/assets/cube.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
-    <body>
+    <body id="home">
 
         <div id="main">
             <div id="start">
                 <div class="tab">
-                    <button class="item" >
-                        //01 &lt;home/&gt;
-                    </button>
-                    <button class="item">
-                        //02 &lt;projects/&gt;
-                    </button>
-                    <button class="item">
-                        //03 &lt;sponsors/&gt;
-                    </button>
-                    <button class="item">
-                        //04 &lt;team/&gt;
-                    </button>
-                    <button class="item">
-                        //05 &lt;contact/&gt;
-                    </button>
+                    <a href="#home">
+                        <button class="item" >
+                            //01 &lt;home/&gt;
+                        </button>
+                    </a>
+                    <a href="#projects">
+                        <button class="item">
+                            //02 &lt;projects/&gt;
+                        </button>
+                    </a>
+                    <a href="#sponsors">
+                        <button class="item">
+                            //03 &lt;sponsors/&gt;
+                        </button>
+                    </a>
+                    <a href="#team">
+                        <button class="item">
+                            //04 &lt;team/&gt;
+                        </button>
+                    </a>
+                    <a href="#contact">
+                        <button class="item">
+                            //05 &lt;contact/&gt;
+                        </button>
+                    </a>
                 </div>
                 <div class="menu">
                     <div class="item red"></div>
@@ -57,13 +71,13 @@
     
                     <div class="spacer"></div>
     
-                    <div class="tag">&lt;h2&gt;</div>
+                    <div class="tag">&lt;p&gt;</div>
                     <div class="hackerbio">
                         HackerHouse is an 8-week experimental summer living space in Lake Tahoe for college-age software developers who identify as 
-                        <span>&lt;span&gt; hackers &lt;/span&gt;</span>
+                        <a href="http://www.paulgraham.com/gba.html" target="_blank"><span>&lt;span&gt; hackers &lt;/span&gt;</span></a>
                          Our members come from all kinds of computer science backgrounds -- competitive programming, web development, blockchain development, binary exploitation, to name a few -- but are united in a hunger for building projects to be used by many.
                     </div>
-                    <div class="tag">&lt;/h2&gt;</div>
+                    <div class="tag">&lt;/p&gt;</div>
     
                     <!-- <div class="spacer"></div>
 
@@ -78,17 +92,20 @@
                     <div class="spacer"></div>
     
                     <div class="actionpipe">
-                        <div class="action-wrapper">
-                            <div class="action">
-                                let's go
+                        <a href="#projects">
+                            <div class="action-wrapper">
+                                <div class="action">
+                                    let's go
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         <div class="pipedown"><div class="downpipe"></div><div class="downcurve"></div></div>
                     </div>
                 </div>
             </div>
 
             <div class="projects-wrapper">
+                <div id="projects"></div>
                 <div class="projects">
                     <div class="project-inner">
                         <div class="tag">&lt;h1&gt;</div>
@@ -106,10 +123,10 @@
                             <img class="foldericon" style="width: 25px;" src="assets/static/folder black.svg" />
                             Trust App
                         </div>
-                        <div class="menuitem"><img class="foldericon" style="width: 25px;" src="assets/static/folder-svgrepo-com.svg" />Campfire</div>
-                        <div class="menuitem"><img class="foldericon" style="width: 25px;" src="assets/static/folder-svgrepo-com.svg" />Reso App</div>
-                        <div class="menuitem"><img class="foldericon" style="width: 25px;" src="assets/static/folder-svgrepo-com.svg" />Habibi Cart</div>
-                        <div class="menuitem"><img class="foldericon" style="width: 25px;" src="assets/static/folder-svgrepo-com.svg" />Arbitrage</div>
+                        <div class="menuitem"><img class="foldericon" style="width: 25px;" src="assets/static/folder-svgrepo-com.svg" />Coming Soon!</div>
+                        <div class="menuitem"><img class="foldericon" style="width: 25px;" src="assets/static/folder-svgrepo-com.svg" />Coming Soon!</div>
+                        <div class="menuitem"><img class="foldericon" style="width: 25px;" src="assets/static/folder-svgrepo-com.svg" />Coming Soon!</div>
+                        <div class="menuitem"><img class="foldericon" style="width: 25px;" src="assets/static/folder-svgrepo-com.svg" />Coming Soon!</div>
                     </div>
                     <div class="holograph">
                         <div class="hologram1">
@@ -156,6 +173,7 @@
             </div>
 
             <div class="sponsors">
+                <div id="sponsors"></div>
                 <div class="sponsors-title">
                     <div class="tag">&lt;h1&gt;</div>
                     <div class="title">
@@ -167,14 +185,18 @@
                 <div class="spacer"></div>
 
                 <div class="ovofund fund">
-                    <div class="inner">
-                        Ovo <br />Fund
-                    </div>
+                    <a href="https://www.ovofund.com" target="_blank">
+                        <div class="inner">
+                            Ovo <br />Fund
+                        </div>
+                    </a>
                 </div>
                 <div class="f1517 fund">
-                    <div class="inner">
-                        1517 <br /> Group
-                    </div>
+                    <a href="https://www.1517fund.com/" target="_blank" >
+                        <div class="inner">
+                            1517 <br /> Group
+                        </div>
+                    </a>
                 </div>
 
                 <svg width="400px" height="400px" viewBox="490 320 250 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -255,6 +277,7 @@
             </div>
 
             <div class="team">
+                <div id="team"></div>
                 <div class="team-title">
                     <div class="tag">&lt;h1&gt;</div>
                     <div class="title">
@@ -262,14 +285,155 @@
                     </div>
                     <div class="tag">&lt;/h1&gt;</div>
                 </div>
+                <div class="spacer"></div>
                 <div class="teamsection">
-
+                    <div id="centro">
+                        <div id="blockchain">
+                        
+                            <span style="margin-right: 18px;">
+                                <div class="block">
+                                    <div class="top"></div>
+                                    <div class="mid">
+                                        <div class="member">
+                                            Larbi
+                                        </div>
+                                        <div class="memberbio">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam omnis fugiat natus obcaecati! Voluptas ullam veniam blanditiis totam, omnis laudantium. Eveniet cumque deleniti id rerum repudiandae.
+                                        </div>
+                                    </div>
+                                    <div class="bot"></div>
+                                </div>
+                            </span>
+                            
+                            <span style="margin-right: 18px;">
+                                <div class="block">
+                                    <div class="top"></div>
+                                    <div class="mid">
+                                        <div class="member">
+                                            Liam
+                                        </div>
+                                        <div class="memberbio">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam omnis fugiat natus obcaecati! Voluptas ullam veniam blanditiis totam, omnis laudantium. Eveniet cumque deleniti id rerum repudiandae.
+                                        </div>
+                                    </div>
+                                    <div class="bot"></div>
+                                </div>
+                            </span>
+                            
+                            <span style="margin-right: 18px;">
+                                <div class="block">
+                                    <div class="top"></div>
+                                    <div class="mid">
+                                        <div class="member">
+                                            Sod
+                                        </div>
+                                        <div class="memberbio">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam omnis fugiat natus obcaecati! Voluptas ullam veniam blanditiis totam, omnis laudantium. Eveniet cumque deleniti id rerum repudiandae.
+                                        </div>
+                                    </div>
+                                    <div class="bot"></div>
+                                </div>
+                            </span>
+                            
+                            <span style="margin-right: 18px;">
+                                <div class="block">
+                                    <div class="top"></div>
+                                    <div class="mid">
+                                        <div class="member">
+                                        </div>
+                                        <div class="memberbio">
+                                        </div>
+                                    </div>
+                                    <div class="bot"></div>
+                                </div>
+                            </span>
+                            
+                            <span style="margin-right: 18px;">
+                                <div class="block">
+                                    <div class="top"></div>
+                                    <div class="mid">
+                                        <div class="member">
+                                        </div>
+                                        <div class="memberbio">
+                                        </div>
+                                    </div>
+                                    <div class="bot"></div>
+                                </div>
+                            </span>
+                            
+                            <span style="margin-right: 18px;">
+                                <div class="block">
+                                    <div class="top"></div>
+                                    <div class="mid">
+                                        <div class="member">
+                                        </div>
+                                        <div class="memberbio">
+                                        </div>
+                                    </div>
+                                    <div class="bot"></div>
+                                </div>
+                            </span>
+                            
+                            <span style="margin-right: 18px;">
+                                <div class="block">
+                                    <div class="top"></div>
+                                    <div class="mid">
+                                        <div class="member">
+                                        </div>
+                                        <div class="memberbio">
+                                        </div>
+                                    </div>
+                                    <div class="bot"></div>
+                                </div>
+                            </span>
+                            
+                            <span style="margin-right: 18px;">
+                                <div class="block">
+                                    <div class="top"></div>
+                                    <div class="mid">
+                                        <div class="member">
+                                        </div>
+                                        <div class="memberbio">
+                                        </div>
+                                    </div>
+                                    <div class="bot"></div>
+                                </div>
+                            </span>
+                            
+                            <span style="margin-right: 18px;">
+                                <div class="block">
+                                    <div class="top"></div>
+                                    <div class="mid">
+                                        <div class="member">
+                                        </div>
+                                        <div class="memberbio">
+                                        </div>
+                                    </div>
+                                    <div class="bot"></div>
+                                </div>
+                            </span>
+                        
+                            <span style="margin-right: 18px;">
+                                <div class="block">
+                                    <div class="top"></div>
+                                    <div class="mid">
+                                        <div class="member">
+                                        </div>
+                                        <div class="memberbio">
+                                        </div>
+                                    </div>
+                                    <div class="bot"></div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="spacer"></div>
 
             <div class="contact">
+                <div id="contact"></div>
                 <div class="contact-title">
                     <div class="tag">&lt;h1&gt;</div>
                     <div class="title">
@@ -280,10 +444,12 @@
                 <div class="spacer"></div>
                 <div class="contact-box">
                     <div class="tag">&lt;div&gt;</div>
-                    <div class="contactboxarea title">
-                        <img src="./assets/static/email-mail-svgrepo-com.svg"/>
-                        admin@hackerhouse.com
-                    </div>
+                    <a href="mailto:admin@hackerhouse.com">
+                        <div class="contactboxarea title">
+                            <img src="./assets/static/email-mail-svgrepo-com.svg"/>
+                            admin@hackerhouse.com
+                        </div>
+                    </a>
                     <div class="tag">&lt;/div&gt;</div>
                 </div>
 
@@ -293,5 +459,7 @@
 
         
         <script src="" async defer></script>
+        <script src="./javascript/text/text.js"></script>
+        <script src="./javascript/chain/chain.js"></script>
     </body>
 </html>

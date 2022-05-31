@@ -1,0 +1,65 @@
+#centro {
+    justify-content: start;
+    display: flex;
+}
+#centro #blockchain {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: row;
+  }
+#centro #blockchain .block {
+    height: 250px;
+    cursor: pointer;
+    width: 220px;
+    border: 2px solid white;
+    text-align: center;
+    font-family: codeR;
+}
+#centro #blockchain .block:hover {
+    border: 2px solid #00ff94;
+    color: #00ff94;
+    text-align: center;
+    font-family: codeR;
+}
+#centro #blockchain .block .top {
+    height: 25px;
+    border-bottom: 1px solid white;
+    color: inherit;
+}
+#centro #blockchain .block .mid {
+    padding: 18px 9px 18px 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    border-top: 1px solid white;
+    color: inherit;
+}
+#centro #blockchain .block .mid .member{
+    font-family: squareR;
+    font-size: 16px;
+    color: inherit;
+}
+#centro #blockchain .block .mid .memberbio{
+    padding-top: 12px;
+    font-family: codeR;
+    font-size: 12px;
+    color: inherit;
+}
+#centro #blockchain .block .bot {
+    height: 25px;
+    border-top: 1px solid white;
+    color: inherit;
+}
+#centro #blockchain .pointer {
+    width: 50px;
+    //height: 185px;
+}
+#centro #blockchain .pointer img {
+    position: relative;
+    top: 80px;
+    color: white;
+    transform: scale(1.7);
+}
