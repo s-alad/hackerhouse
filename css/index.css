@@ -350,6 +350,7 @@ body {
   transform: rotate(75deg);
 }
 #main .folder .projectcontent {
+  text-align: center;
   position: relative;
   left: -90px;
   top: -50px;
@@ -359,6 +360,16 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: codeR;
+}
+#main .folder .projectcontent .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
 }
 #main .tag {
   font-family: "Roboto";

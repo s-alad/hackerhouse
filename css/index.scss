@@ -320,6 +320,7 @@ body {
         }
 
         .projectcontent {
+            text-align: center;
             position: relative;
             left: -90px;
             top: -50px;
@@ -330,6 +331,13 @@ body {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            @include displayflex();
+            font-family: codeR;
+
+            .text {
+                @include displayflex();
+                z-index: 99;
+            }
 
         }
     }
